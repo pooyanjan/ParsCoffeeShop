@@ -1,0 +1,4 @@
+.btn_primary{
+    @apply text-white text-sm bg-primaryBrownOne px-6 py-3  hover:opacity-80 rounded-lg
+}
+

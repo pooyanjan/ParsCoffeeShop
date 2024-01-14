@@ -1,0 +1,92 @@
+header {
+  @apply w-full h-auto py-4;
+}
+
+header .container {
+  @apply w-full h-auto;
+}
+
+header .container .row {
+  @apply w-full h-auto flex items-center justify-between;
+}
+
+/* logo */
+header .container .row .logo {
+  @apply w-24 h-12;
+}
+
+header .container .row .logo img {
+  @apply w-full h-full;
+}
+/* navigation */
+header .container .row nav {
+  @apply w-fit h-auto hidden lg:flex;
+}
+
+header .container .row nav ul {
+  @apply w-fit h-auto flex items-center gap-6;
+}
+
+header .container .row nav ul li a{
+    @apply text-sm text-primaryBlackSeven font-medium hover:text-primaryBrownOne hover:font-bold 
+  }
+
+  header .container .row nav ul li.active a{
+    @apply text-primaryBrownOne font-bold 
+  }
+
+  header .container .row nav ul li.sub_menu{
+    @apply relative ml-3
+  }
+
+  header .container .row nav ul li.sub_menu::after{
+    @apply content-[''] w-6 h-6 absolute -left-5 top-0 bg-no-repeat bg-center ;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.50001 8.40001C6.15001 8.40001 5.80001 8.26501 5.53501 8.00001L2.27501 4.74001C2.13001 4.59501 2.13001 4.35501 2.27501 4.21001C2.42001 4.06501 2.66001 4.06501 2.80501 4.21001L6.06501 7.47001C6.30501 7.71001 6.69501 7.71001 6.93501 7.47001L10.195 4.21001C10.34 4.06501 10.58 4.06501 10.725 4.21001C10.87 4.35501 10.87 4.59501 10.725 4.74001L7.46501 8.00001C7.20001 8.26501 6.85001 8.40001 6.50001 8.40001Z' fill='%23353535'/%3E%3C/svg%3E%0A");
+  }
+
+  header .container .row nav ul li.sub_menu ul{
+    @apply w-[200px] h-auto px-6 py-4 bg-white flex flex-col items-start rounded-lg absolute top-8 right-0 invisible scale-0 transition-all duration-300
+  }
+  header .container .row nav ul li.sub_menu:hover ul{
+    @apply visible scale-100 transition-all duration-300
+  }
+
+/* items */
+header .container .row .items{
+    @apply w-fit h-auto flex items-center  gap-4 lg:gap-6
+}
+
+header .container .row .items .search{
+    @apply w-6 lg:w-12 h-6 lg:h-12 flex justify-center items-center
+}
+
+header .container .row .items .search svg{
+    @apply w-6 h-6
+} 
+
+header .container .row .items .search svg path{
+    @apply fill-primaryBrownOne
+}
+
+header .container .row .items .btn_primary{
+  @apply hidden lg:flex
+}
+
+/* menu btn */
+
+header .container .row .items .menu_btn{
+  @apply w-6 h-6 flex lg:hidden 
+}
+
+header .container .row .items .menu_btn svg{
+  @apply w-6 h-6
+} 
+
+header .container .row .items .menu_btn svg path{
+  @apply fill-primaryBrownOne
+}
+
+
+
+
+
