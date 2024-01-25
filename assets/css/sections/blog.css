@@ -1,0 +1,19 @@
+.blog_section{
+    @apply w-full h-auto py-20;
+}
+
+.blog_section .container{
+    @apply w-full;
+}
+
+.blog_section .container .row{
+    @apply w-full h-auto flex flex-col;
+}
+
+.blog_section .container .row .blog_cards{
+    @apply w-full h-auto grid grid-cols-4 grid-rows-2 gap-4 mt-10
+}
+
+.blog_section .container .row .btn_outline{
+    @apply mx-auto mt-6 bg-green-400
+}

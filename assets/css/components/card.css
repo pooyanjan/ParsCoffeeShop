@@ -1,0 +1,64 @@
+/* Blog Card */
+.blog_card{
+    @apply w-full h-[288px] rounded-lg overflow-hidden relative 
+} 
+
+.blog_card a{
+    @apply w-full h-full  relative 
+}
+
+.blog_card a::after{
+    @apply content-[''] w-full h-full bg-black/30 absolute right-0 top-0  invisible opacity-0 transition-all duration-300
+}
+
+.blog_card:hover a::after{
+    @apply visible opacity-100 transition-all duration-300
+}
+
+
+.blog_card img{
+    @apply w-full h-full object-cover
+}
+
+.blog_card .title{
+    @apply w-full h-14 bg-primaryBrownLightTwo flex items-center justify-between gap-4 px-4 absolute right-0 -bottom-16 z-20 transition-all duration-300
+}
+
+.blog_card:hover .title{
+    @apply bottom-0  transition-all duration-300
+}
+
+.blog_card .title h3{
+    @apply text-sm text-primaryBrownOne font-bold text-ellipsis overflow-hidden whitespace-nowrap
+}
+
+.blog_card .title .more{
+    @apply w-8 h-8 border border-primaryBrownOne rounded-lg flex justify-center items-center shrink-0 
+}
+.blog_card .title .more svg{
+    @apply w-6 h-6  
+}
+
+.blog_card .title .more svg path{
+    @apply stroke-primaryBrownOne stroke-[2px]
+}
+
+.blog_card .view{
+    @apply w-16 h-auto bg-primaryBrownLightTwo rounded-b-lg flex flex-col-reverse items-center absolute top-0 -right-full  py-2 z-20 transition-all duration-300
+}
+
+.blog_card:hover .view{
+    @apply absolute top-0 right-4 transition-all duration-300
+}
+
+.blog_card .view span{
+    @apply text-primaryBrownOne text-xs font-bold
+}
+
+.blog_card .view  svg{
+    @apply w-6 h-6  
+}
+
+.blog_card .view  svg path{
+    @apply stroke-primaryBrownOne 
+}

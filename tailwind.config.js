@@ -7,7 +7,7 @@ module.exports = {
       md:"768px",
       lg:"992px",
       xl:"1200px",
-     " 2xl":"1320px",
+     "2xl":"1320px",
     },
     container: {
       center: true,
@@ -16,7 +16,7 @@ module.exports = {
         md:"768px",
         lg:"992px",
         xl:"1200px",
-       " 2xl":"1320px",
+       "2xl":"1320px",
       },
     },
     extend: {
@@ -28,7 +28,8 @@ module.exports = {
         // Brown
         primaryBrownOne: '#663518' ,
         // Brown Light
-        primaryBrownLight: '#FFF7ED',
+        primaryBrownLightOne: '#FFF7ED',
+        primaryBrownLightTwo: '#DDCDAF',
         // Black
         primaryBlackSeven: '#757575'
       }

@@ -4,11 +4,17 @@
 
 /* Components */
 @import "./components/button.css";
+@import "./components/title.css";
+@import "./components/card.css";
 
 /* Layout */
 @import "./layout/header.css";
 
-@tailwind base;
+/* sections */
+@import "./sections/blog.css";
+
+
+@tailwind base; 
 @tailwind components;
 @tailwind utilities;
 

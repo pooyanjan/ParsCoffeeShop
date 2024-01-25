@@ -2,3 +2,12 @@
     @apply text-white text-sm bg-primaryBrownOne px-6 py-3  hover:opacity-80 rounded-lg
 }
 
+.btn_outline{
+    @apply text-primaryBrownOne text-sm border border-primaryBrownOne px-6 py-3 rounded-lg transition-all duration-400 bg-red-500 
+}
+
+.btn_outline:hover{
+    @apply bg-red-400 text-white transition-all duration-400
+}
+
+

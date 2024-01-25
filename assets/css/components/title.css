@@ -1,0 +1,7 @@
+.title_primary{
+    @apply text-primaryBrownOne text-[44px] font-kalameh font-bold  text-center 
+}
+
+.subtitle_primary{
+    @apply w-[55%] text-primaryBlackSeven mx-auto text-center text-sm mt-4 
+}
