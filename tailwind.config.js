@@ -30,7 +30,10 @@ module.exports = {
         // Brown Light
         primaryBrownLightOne: '#FFF7ED',
         primaryBrownLightTwo: '#DDCDAF',
+        // Green Light
+        primaryGreenLightOne: '#A2B27D',
         // Black
+        primaryBlackTwo: '#222222',
         primaryBlackSeven: '#757575'
       }
     },

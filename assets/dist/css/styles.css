@@ -38,6 +38,8 @@ body {
     opacity: 0.8;
 }
 .btn_outline {
+    display: flex;
+    justify-content: center;
     border-radius: 0.5rem;
     border-width: 1px;
     --tw-border-opacity: 1;
@@ -52,7 +54,7 @@ body {
     color: rgb(102 53 24 / var(--tw-text-opacity));
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
+    transition-duration: 300ms;
 }
 .btn_outline:hover {
     --tw-bg-opacity: 1;
@@ -61,34 +63,61 @@ body {
     color: rgb(255 255 255 / var(--tw-text-opacity));
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
+    transition-duration: 300ms;
 }
 .title_primary {
     text-align: center;
     font-family: kalameh;
-    font-size: 44px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
     --tw-text-opacity: 1;
     color: rgb(102 53 24 / var(--tw-text-opacity));
 }
+@media (min-width: 768px) {
+    .title_primary {
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+}
+@media (min-width: 1200px) {
+    .title_primary {
+        font-size: 44px;
+    }
+}
 .subtitle_primary {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
-    width: 55%;
+    margin-top: 0.5rem;
+    width: 100%;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     --tw-text-opacity: 1;
     color: rgb(117 117 117 / var(--tw-text-opacity));
 }
+@media (min-width: 768px) {
+    .subtitle_primary {
+        margin-top: 1rem;
+        width: 70%;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+}
 /* Blog Card */
 .blog_card {
     position: relative;
-    height: 288px;
-    width: 100%;
+    height: 200px;
+    width: 200px;
+    flex-shrink: 0;
     overflow: hidden;
     border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+    .blog_card {
+        height: 288px;
+        width: 100%;
+    }
 }
 .blog_card a {
     position: relative;
@@ -219,6 +248,60 @@ body {
 }
 .blog_card .view  svg path {
     stroke: #663518;
+}
+/* Service Crad */
+.service_card {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border-top-right-radius: 64px;
+    background-color: transparent;
+}
+.service_card:hover {
+    cursor: pointer;
+    background-color: rgb(162 178 125 / 0.4);
+}
+.service_card .head {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.service_card:hover .head {
+    --tw-bg-opacity: 1;
+    background-color: rgb(162 178 125 / var(--tw-bg-opacity));
+}
+.service_card .head img {
+    height: 5rem;
+    width: 5rem;
+}
+.service_card .content {
+    height: auto;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+.service_card .content h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+.service_card .content p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(117 117 117 / 0.9);
 }
 /* Layout */
 header {
@@ -394,6 +477,54 @@ header .container .row .items .menu_btn svg path {
     fill: #663518;
 }
 /* sections */
+.service_section {
+    height: auto;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.service_section .container {
+    width: 100%;
+}
+.service_section .container .row {
+    width: 100%;
+}
+.service_section .container .row .service_cards {
+    margin-top: 3.5rem;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 576px) {
+    .service_section .container .row .service_cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (min-width: 768px) {
+    .service_section .container .row .service_cards {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (min-width: 992px) {
+    .service_section .container .row .service_cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1200px) {
+    .service_section .container .row .service_cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1320px) {
+    .service_section .container .row .service_cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
 .blog_section {
     height: auto;
     width: 100%;
@@ -410,18 +541,49 @@ header .container .row .items .menu_btn svg path {
     flex-direction: column;
 }
 .blog_section .container .row .blog_cards {
-    margin-top: 2.5rem;
-    display: grid;
+    margin-top: 1.5rem;
+    display: flex;
     height: auto;
     width: 100%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 0.75rem;
+    overflow-x: auto;
+}
+@media (min-width: 768px) {
+    .blog_section .container .row .blog_cards {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        overflow-x: visible;
+    }
+}
+@media (min-width: 992px) {
+    .blog_section .container .row .blog_cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1200px) {
+    .blog_section .container .row .blog_cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1320px) {
+    .blog_section .container .row .blog_cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 .blog_section .container .row .btn_outline {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.5rem;
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .blog_section .container .row .btn_outline {
+        width: -moz-fit-content;
+        width: fit-content;
+    }
 }
 /* ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com */
 /*

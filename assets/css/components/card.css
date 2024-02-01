@@ -1,6 +1,6 @@
 /* Blog Card */
 .blog_card{
-    @apply w-full h-[288px] rounded-lg overflow-hidden relative 
+    @apply w-[200px] md:w-full h-[200px] md:h-[288px] rounded-lg overflow-hidden relative  shrink-0 
 } 
 
 .blog_card a{
@@ -46,7 +46,6 @@
 .blog_card .view{
     @apply w-16 h-auto bg-primaryBrownLightTwo rounded-b-lg flex flex-col-reverse items-center absolute top-0 -right-full  py-2 z-20 transition-all duration-300
 }
-
 .blog_card:hover .view{
     @apply absolute top-0 right-4 transition-all duration-300
 }
@@ -61,4 +60,37 @@
 
 .blog_card .view  svg path{
     @apply stroke-primaryBrownOne 
+}
+
+
+/* Service Crad */
+.service_card{
+    @apply w-full h-auto rounded-lg rounded-tr-[64px] bg-transparent overflow-hidden cursor-pointer
+}
+
+.service_card:hover{
+    @apply bg-primaryGreenLightOne/40 cursor-pointer
+}
+
+.service_card .head {
+    @apply w-full h-auto bg-transparent py-6  flex justify-center
+}
+.service_card:hover .head {
+    @apply bg-primaryGreenLightOne
+}
+
+.service_card .head img{
+    @apply w-20 h-20
+}
+
+.service_card .content{
+    @apply w-full h-auto px-4 pt-8 pb-6 text-center 
+}
+
+.service_card .content h3{
+    @apply text-base font-semibold text-primaryBlackTwo
+}
+
+.service_card .content p{
+    @apply text-sm font-normal text-primaryBlackSeven/90 mt-2
 }

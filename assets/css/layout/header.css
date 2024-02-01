@@ -20,7 +20,7 @@ header .container .row .logo img {
 }
 /* navigation */
 header .container .row nav {
-  @apply w-fit h-auto hidden lg:flex;
+  @apply w-fit h-auto hidden lg:flex ;
 }
 
 header .container .row nav ul {
