@@ -1,11 +1,11 @@
 .btn_primary {
-  @apply text-white text-sm bg-primaryBrownOne px-6 py-3  hover:opacity-80 rounded-lg;
+  @apply text-white text-sm bg-primary-brown-100 px-6 py-3  hover:opacity-80 rounded-lg;
 }
 
 .btn_outline {
-  @apply text-primaryBrownOne text-sm border border-primaryBrownOne px-6 py-3 rounded-lg flex justify-center transition-all duration-300 ;
+  @apply text-primary-brown-100 text-sm border border-primary-brown-100 px-6 py-3 rounded-lg flex justify-center transition-all duration-300 ;
 }
 
 .btn_outline:hover {
-  @apply bg-primaryBrownOne text-white transition-all duration-300;
+  @apply bg-primary-brown-100 text-white transition-all duration-300;
 }

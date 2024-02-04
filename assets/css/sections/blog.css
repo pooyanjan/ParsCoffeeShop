@@ -11,7 +11,7 @@
 }
 
 .blog_section .container .row .blog_cards{
-    @apply w-full h-auto flex md:grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-2 md:gap-4 gap-3 mt-6 md:mt-10 overflow-x-auto md:overflow-x-visible
+    @apply w-full h-auto flex md:grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-2 md:gap-4 gap-3 mt-6 md:mt-10 overflow-x-auto md:overflow-x-visible snap-x
 }
 
 .blog_section .container .row .btn_outline{

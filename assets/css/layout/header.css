@@ -28,11 +28,11 @@ header .container .row nav ul {
 }
 
 header .container .row nav ul li a{
-    @apply text-sm text-primaryBlackSeven font-medium hover:text-primaryBrownOne hover:font-bold 
+    @apply text-sm text-primary-black-700 font-medium hover:text-primary-brown-100 hover:font-bold 
   }
 
   header .container .row nav ul li.active a{
-    @apply text-primaryBrownOne font-bold 
+    @apply text-primary-brown-100 font-bold 
   }
 
   header .container .row nav ul li.sub_menu{
@@ -57,7 +57,7 @@ header .container .row .items{
 }
 
 header .container .row .items .search{
-    @apply w-6 lg:w-12 h-6 lg:h-12 flex justify-center items-center
+    @apply w-6 lg:w-12 h-6 lg:h-12 flex justify-center items-center cursor-pointer
 }
 
 header .container .row .items .search svg{
@@ -65,7 +65,7 @@ header .container .row .items .search svg{
 } 
 
 header .container .row .items .search svg path{
-    @apply fill-primaryBrownOne
+    @apply fill-primary-brown-100
 }
 
 header .container .row .items .btn_primary{
@@ -83,9 +83,9 @@ header .container .row .items .menu_btn svg{
 } 
 
 header .container .row .items .menu_btn svg path{
-  @apply fill-primaryBrownOne
+  @apply fill-primary-brown-100
 }
-
+ 
 
 
 

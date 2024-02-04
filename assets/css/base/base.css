@@ -1,5 +1,5 @@
 body {
-  @apply   bg-primaryBrownLightOne font-dana;
+  @apply   bg-primary-brown-light-100 font-dana;
 }
 .container {
   @apply px-4;

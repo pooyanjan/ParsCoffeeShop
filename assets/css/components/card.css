@@ -1,6 +1,6 @@
 /* Blog Card */
 .blog_card{
-    @apply w-[200px] md:w-full h-[200px] md:h-[288px] rounded-lg overflow-hidden relative  shrink-0 
+    @apply w-[200px] md:w-full h-[200px] md:h-[288px] rounded-lg overflow-hidden relative  shrink-0  scroll-ms-5 snap-start
 } 
 
 .blog_card a{
@@ -21,37 +21,37 @@
 }
 
 .blog_card .title{
-    @apply w-full h-14 bg-primaryBrownLightTwo flex items-center justify-between gap-4 px-4 absolute right-0 -bottom-16 z-20 transition-all duration-300
+    @apply w-full h-10 md:h-14 bg-primary-brown-light-200 flex items-center justify-between gap-4 px-4 absolute right-0 bottom-0  md:-bottom-16 z-20 transition-all duration-300
 }
-
+ 
 .blog_card:hover .title{
     @apply bottom-0  transition-all duration-300
 }
 
 .blog_card .title h3{
-    @apply text-sm text-primaryBrownOne font-bold text-ellipsis overflow-hidden whitespace-nowrap
+    @apply text-sm text-primary-brown-100 font-bold text-ellipsis overflow-hidden whitespace-nowrap
 }
 
 .blog_card .title .more{
-    @apply w-8 h-8 border border-primaryBrownOne rounded-lg flex justify-center items-center shrink-0 
+    @apply w-8 h-8 border border-primary-brown-100 rounded-lg flex justify-center items-center shrink-0 
 }
 .blog_card .title .more svg{
     @apply w-6 h-6  
 }
 
 .blog_card .title .more svg path{
-    @apply stroke-primaryBrownOne stroke-[2px]
+    @apply stroke-primary-brown-100 stroke-[2px]
 }
 
 .blog_card .view{
-    @apply w-16 h-auto bg-primaryBrownLightTwo rounded-b-lg flex flex-col-reverse items-center absolute top-0 -right-full  py-2 z-20 transition-all duration-300
+    @apply w-14 h-auto md:w-16 bg-primary-brown-light-200 rounded-b-lg flex flex-col-reverse items-center absolute top-0 right-2 md:-right-full  py-2 z-20 transition-all duration-300
 }
 .blog_card:hover .view{
     @apply absolute top-0 right-4 transition-all duration-300
 }
 
 .blog_card .view span{
-    @apply text-primaryBrownOne text-xs font-bold
+    @apply text-primary-brown-100 text-xs font-bold
 }
 
 .blog_card .view  svg{
@@ -59,38 +59,60 @@
 }
 
 .blog_card .view  svg path{
-    @apply stroke-primaryBrownOne 
+    @apply stroke-primary-brown-100 
 }
 
 
 /* Service Crad */
+
 .service_card{
     @apply w-full h-auto rounded-lg rounded-tr-[64px] bg-transparent overflow-hidden cursor-pointer
 }
 
+ /* .service_card{
+    @apply w-full h-auto rounded-lg rounded-tr-[64px] bg-primary-green-100/40 overflow-hidden cursor-pointer
+}  */
+
 .service_card:hover{
-    @apply bg-primaryGreenLightOne/40 cursor-pointer
+    @apply bg-primary-green-100/40 cursor-pointer
 }
 
 .service_card .head {
-    @apply w-full h-auto bg-transparent py-6  flex justify-center
+    @apply w-full h-auto bg-transparent pt-6  flex justify-center relative ;
 }
+
 .service_card:hover .head {
-    @apply bg-primaryGreenLightOne
+    @apply  bg-primary-green-100 
+}
+
+.service_card:hover .head {
+    @apply bg-primary-green-100
 }
 
 .service_card .head img{
     @apply w-20 h-20
 }
 
+.service_card .head .shape {
+    @apply w-full absolute right-0 bottom-[-42px] -z-10 overflow-hidden leading-[0]
+}
+
+.service_card .head .shape svg path {
+    @apply fill-transparent
+}
+
+.service_card:hover .head .shape svg path {
+    @apply fill-primary-green-100
+}
+
 .service_card .content{
-    @apply w-full h-auto px-4 pt-8 pb-6 text-center 
+    @apply w-full h-auto px-4 pt-16 pb-6 text-center 
 }
 
 .service_card .content h3{
-    @apply text-base font-semibold text-primaryBlackTwo
+    @apply text-base font-semibold text-primary-black-200
 }
 
 .service_card .content p{
-    @apply text-sm font-normal text-primaryBlackSeven/90 mt-2
+    @apply text-sm font-normal text-primary-black-700/90 mt-2
 }
